@@ -115,12 +115,19 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               const HeightSpacer(size: 25),
-              const Row(
+              Row(
                 children: [
-                  TransactionWidget(icon: Icons.add, text: 'Fund Wallet'),
-                  WidthSpacer(width: 10),
                   TransactionWidget(
-                      icon: Icons.send_outlined, text: 'Send Money'),
+                    icon: Icons.add,
+                    text: 'Fund Wallet',
+                    onTap: () {},
+                  ),
+                  const WidthSpacer(width: 10),
+                  TransactionWidget(
+                    icon: Icons.send_outlined,
+                    text: 'Send Money',
+                    onTap: () {},
+                  ),
                 ],
               ),
               const HeightSpacer(size: 30),
