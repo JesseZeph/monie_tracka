@@ -127,7 +127,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                     child: SpanTextWidget(
                       firstSpan: 'I already have an account? ',
                       secondSpan: 'Login',
-                      onTapSecoondSpan: () {},
+                      onTapSecondSpan: () {},
                     ),
                   ),
                 ],

@@ -26,7 +26,7 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
             child: SpanTextWidget(
               firstSpan: "By signing up, I have read and agreed to the ",
               secondSpan: 'Terms and Conditions ',
-              onTapSecoondSpan: () {},
+              onTapSecondSpan: () {},
             ),
           ),
           Align(

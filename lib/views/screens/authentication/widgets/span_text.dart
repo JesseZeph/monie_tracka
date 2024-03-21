@@ -6,12 +6,12 @@ import '../../../common/appstyle.dart';
 
 class SpanTextWidget extends StatelessWidget {
   final String firstSpan, secondSpan;
-  final VoidCallback onTapSecoondSpan;
+  final VoidCallback onTapSecondSpan;
   const SpanTextWidget({
     super.key,
     required this.firstSpan,
     required this.secondSpan,
-    required this.onTapSecoondSpan,
+    required this.onTapSecondSpan,
   });
 
   @override
@@ -24,7 +24,7 @@ class SpanTextWidget extends StatelessWidget {
           TextSpan(
             text: secondSpan,
             style: appStyle(12, mainTextColor, FontWeight.w600),
-            recognizer: TapGestureRecognizer()..onTap = onTapSecoondSpan,
+            recognizer: TapGestureRecognizer()..onTap = onTapSecondSpan,
           ),
         ],
       ),
