@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                     color: monieWhite,
                     borderRadius: BorderRadius.circular(12.r),
                   ),
-                  child: const Column(
+                  child: Column(
                     children: [
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -200,22 +200,27 @@ class _HomePageState extends State<HomePage> {
                           MenuTileWidget(
                             imageUrl: airtime,
                             text: 'Airtime',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: arrow,
                             text: 'Data  ',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: bills,
                             text: 'Bills',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: electricity,
                             text: 'Electricity',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: tv,
                             text: 'TV',
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -227,22 +232,27 @@ class _HomePageState extends State<HomePage> {
                           MenuTileWidget(
                             imageUrl: stack,
                             text: 'Cards',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: naira,
                             text: 'Cash Backs',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: group,
                             text: 'Group Budget',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: contribution,
                             text: 'Contribution',
+                            onTap: () {},
                           ),
                           MenuTileWidget(
                             imageUrl: more,
                             text: 'More',
+                            onTap: () {},
                           ),
                         ],
                       ),

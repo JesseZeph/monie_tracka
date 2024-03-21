@@ -9,11 +9,13 @@ import '../../../common/custom_text.dart';
 class MenuTileWidget extends StatelessWidget {
   final String imageUrl;
   final String text;
+  final VoidCallback? onTap;
 
   const MenuTileWidget({
     Key? key,
     required this.imageUrl,
     required this.text,
+    this.onTap,
   }) : super(key: key);
 
   @override
@@ -21,15 +23,18 @@ class MenuTileWidget extends StatelessWidget {
     return Column(
       children: [
         FittedBox(
-          child: Container(
-            width: width * 0.10,
-            height: height * 0.05,
-            padding: EdgeInsets.all(5.r),
-            decoration: BoxDecoration(
-              color: lightTextColor.withOpacity(0.05),
-              borderRadius: BorderRadius.circular(5.r),
+          child: GestureDetector(
+            onTap: onTap,
+            child: Container(
+              width: width * 0.10,
+              height: height * 0.05,
+              padding: EdgeInsets.all(5.r),
+              decoration: BoxDecoration(
+                color: lightTextColor.withOpacity(0.05),
+                borderRadius: BorderRadius.circular(5.r),
+              ),
+              child: SvgPicture.asset(imageUrl),
             ),
-            child: SvgPicture.asset(imageUrl),
           ),
         ),
         SizedBox(height: 5.h),
