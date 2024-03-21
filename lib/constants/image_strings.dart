@@ -1,1 +1,17 @@
 const String logo = 'assets/images/logo.svg';
+const String profileImage = 'assets/images/profile_image.png';
+const String airtime = 'assets/images/Frame.svg';
+const String bills = 'assets/images/book.svg';
+const String arrow = 'assets/images/arrow.svg';
+const String electricity = 'assets/images/lightening.svg';
+const String tv = 'assets/images/tv.svg';
+const String stack = 'assets/images/stack.svg';
+const String group = 'assets/images/group.svg';
+const String contribution = 'assets/images/note.svg';
+const String more = 'assets/images/more.svg';
+const String naira = 'assets/images/naira.svg';
+const String home = 'assets/images/home.svg';
+const String budget = 'assets/images/list.svg';
+const String savings = 'assets/images/savings.svg';
+const String payments = 'assets/images/naira-card.svg';
+const String profile = 'assets/images/profile.svg';

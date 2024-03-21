@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:monie_tracka/constants/app_constants.dart';
+import 'package:monie_tracka/constants/image_strings.dart';
 import 'package:monie_tracka/views/common/appstyle.dart';
 import 'package:monie_tracka/views/common/custom_text.dart';
 import 'package:monie_tracka/views/common/dropdown.dart';
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(150.r),
                   child: Image.asset(
-                    'assets/images/profile_image.png',
+                    profileImage,
                     fit: BoxFit.cover, // Use BoxFit.cover to fill the container
                   ),
                 ),
@@ -190,23 +191,23 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           MenuTileWidget(
-                            imageUrl: 'assets/images/Frame.svg',
+                            imageUrl: airtime,
                             text: 'Airtime',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/arrow.svg',
+                            imageUrl: arrow,
                             text: 'Data  ',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/book.svg',
+                            imageUrl: bills,
                             text: 'Bills',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/lightening.svg',
+                            imageUrl: electricity,
                             text: 'Electricity',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/tv.svg',
+                            imageUrl: tv,
                             text: 'TV',
                           ),
                         ],
@@ -217,23 +218,23 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           MenuTileWidget(
-                            imageUrl: 'assets/images/stack.svg',
+                            imageUrl: stack,
                             text: 'Cards',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/naira.svg',
+                            imageUrl: naira,
                             text: 'Cash Backs',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/group.svg',
+                            imageUrl: group,
                             text: 'Group Budget',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/note.svg',
+                            imageUrl: contribution,
                             text: 'Contribution',
                           ),
                           MenuTileWidget(
-                            imageUrl: 'assets/images/more.svg',
+                            imageUrl: more,
                             text: 'More',
                           ),
                         ],

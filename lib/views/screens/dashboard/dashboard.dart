@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:monie_tracka/constants/app_constants.dart';
 import 'package:monie_tracka/views/screens/dashboard/pages/home.dart';
 
+import '../../../constants/image_strings.dart';
 import 'pages/budget.dart';
 import 'pages/payments.dart';
 import 'pages/profile.dart';
@@ -70,20 +71,15 @@ class _DashboardState extends State<Dashboard> {
               type: BottomNavigationBarType.fixed,
               items: [
                 BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/images/home.svg'),
-                    label: 'Home'),
+                    icon: SvgPicture.asset(home), label: 'Home'),
                 BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/images/list.svg'),
-                    label: 'Budget'),
+                    icon: SvgPicture.asset(budget), label: 'Budget'),
                 BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/images/savings.svg'),
-                    label: 'Savings'),
+                    icon: SvgPicture.asset(savings), label: 'Savings'),
                 BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/images/naira-card.svg'),
-                    label: 'Payments'),
+                    icon: SvgPicture.asset(payments), label: 'Payments'),
                 BottomNavigationBarItem(
-                    icon: SvgPicture.asset('assets/images/profile.svg'),
-                    label: 'Profile'),
+                    icon: SvgPicture.asset(profile), label: 'Profile'),
               ]),
         ),
       ),
