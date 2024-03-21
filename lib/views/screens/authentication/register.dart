@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -16,6 +15,7 @@ import 'package:monie_tracka/views/common/text_input_field.dart';
 import 'package:monie_tracka/views/screens/authentication/login.dart';
 import 'package:monie_tracka/views/screens/authentication/widgets/label_text.dart';
 import 'package:monie_tracka/views/screens/authentication/widgets/privacy_widget.dart';
+import 'package:monie_tracka/views/screens/authentication/widgets/span_text.dart';
 import 'package:monie_tracka/views/screens/authentication/widgets/validation_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -124,21 +124,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                   const HeightSpacer(size: 20),
                   Align(
                     alignment: Alignment.center,
-                    child: Text.rich(
-                      TextSpan(
-                        text: "I already have an account? ",
-                        style: appStyle(11, lightTextColor, FontWeight.w600),
-                        children: [
-                          TextSpan(
-                            text: 'Login ',
-                            style: appStyle(12, mainTextColor, FontWeight.w700),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                Get.to(() => const LoginPage());
-                              },
-                          ),
-                        ],
-                      ),
+                    child: SpanTextWidget(
+                      firstSpan: 'I already have an account? ',
+                      secondSpan: 'Login',
+                      onTapSecoondSpan: () {},
                     ),
                   ),
                 ],

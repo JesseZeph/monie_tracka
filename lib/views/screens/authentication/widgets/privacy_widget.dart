@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:monie_tracka/constants/app_constants.dart';
 import 'package:monie_tracka/views/common/appstyle.dart';
+import 'package:monie_tracka/views/screens/authentication/widgets/span_text.dart';
 
 class TermsAndConditions extends StatefulWidget {
   const TermsAndConditions({Key? key, this.onPressed}) : super(key: key);
@@ -22,18 +23,10 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
         children: [
           Align(
             alignment: Alignment.center,
-            child: Text.rich(
-              TextSpan(
-                text: "By signing up, I have read and agreed to the ",
-                style: appStyle(11, lightTextColor, FontWeight.w600),
-                children: [
-                  TextSpan(
-                    text: 'Terms and Conditions ',
-                    style: appStyle(12, mainTextColor, FontWeight.w600),
-                    recognizer: TapGestureRecognizer()..onTap = () {},
-                  ),
-                ],
-              ),
+            child: SpanTextWidget(
+              firstSpan: "By signing up, I have read and agreed to the ",
+              secondSpan: 'Terms and Conditions ',
+              onTapSecoondSpan: () {},
             ),
           ),
           Align(
